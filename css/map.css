@@ -1,0 +1,55 @@
+#destination,
+#destination-control {
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: none;
+}
+
+form {
+  margin-top: 25px;
+}
+
+#destination-address {
+  display: flex;
+}
+
+#destination-radius {
+  flex: 1;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+#destination-marker p {
+  margin: 15px !important;
+}
+
+#destination-marker button {
+  width: 40%;
+}
+
+#destination-search {
+  border-radius: 0;
+  flex: 6;
+}
+
+#destination-submit {
+  flex: 1;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.destination {
+  color: white;
+}
+
+.btn-custom {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 4px !important;
+  margin: 0 auto !important;
+}
+
+.visible {
+  opacity: 1 !important;
+  display: initial !important;
+}

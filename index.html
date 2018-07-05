@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Chime</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/card.css" rel="stylesheet">
+
+    <!-- Mapbox CSS -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Leaflet CSS -->
+    <link href="css/map.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="logo.png" style="max-height: 5vh; display: inline; padding-right: 5px; padding-bottom: 5px;">Chime
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#use">Use</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Chime</h1>
+                        <p class="intro-text">Location based alarm app.
+                            <br> Some other descriptor</p>
+                        <a href="#use" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Use Section -->
+    <section id="use" class="container content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" id="map"></div>
+                <div class="col-lg-12">
+                    <h1 id="map-header"></h1>
+                    <form>
+                        <div id="destination">
+                            <div id="destination-address">
+                                <input id="destination-radius" placeholder="Enter Radius (mi) Here." class="form-control" type="search" />
+                                <input id="destination-search" placeholder="Enter Address Here." class="form-control" type="search" />
+                                <button id="destination-submit" class="btn btn-custom" type="button">Search</button>
+                            </div>
+                            <div id="destination-marker">
+                                <p>OR</p>
+                                <button class="btn btn-custom" type="button">Select Destination On Map</button>
+                            </div>
+                        </div>
+                        <div id="destination-control">
+                            <button class="btn btn-custom" type="button">Stop Alarm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="about" class="content-section text-center">
+        <div class="download-section" style="background-color: #a110a2">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>About Chime</h2>
+                    <p>Making the next big thing is not about getting rich; it’s about creating something that will solve day
+                        to day problems of people. For NYC, our day to day problem is the MTA.</p>
+
+                    <p>Often unreliable and prone to delays, our city’s public transportation has a reputation for being the
+                        number one reason to make you late. To phase out all of the mishaps of delays and construction people
+                        from all over the 5 boroughs take naps on the bus or train, but tend to miss their stop. Chime solves
+                        this problem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Our Team</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-lg-3" style="margin: 10px 0;">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
+                        <img src="img/andy.jpg" alt="Andy" style="width:100%; padding-bottom: 10px;">
+                        <h1>Andy Mina</h1>
+                        <hr style="border-color:white">
+                        <p class="title" style="color: white">Founder</p>
+                        <p>Senior at Brooklyn Tech</p>
+                        <a href="#">
+                            <i class="fa fa-mobile" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-github" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin-square" style="color:white"></i>
+                        </a>
+                        <button href="mailto:amina4835@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3" style="margin: 10px 0;">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
+                        <img src="img/hashir.jpg" alt="Hashir" style="width:100%; padding-bottom: 10px;">
+                        <h1>Hashir Khan</h1>
+                        <hr style="border-color:white">
+                        <p class="title" style="color: white">Co-Founder</p>
+                        <p>Senior at Brooklyn Tech</p>
+                        <a href="#">
+                            <i class="fa fa-mobile" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-github" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin-square" style="color:white"></i>
+                        </a>
+                        <button href="mailto:hkhan6265@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3" style="margin: 10px 0;">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
+                        <img src="img/davin.jpg" alt="Davin" style="width:100%; padding-bottom: 10px;">
+                        <h1>Davin
+                            <br> Lin</h1>
+                        <hr style="border-color:white">
+                        <p class="title" style="color: white">Co-Founder</p>
+                        <p>Senior at Brooklyn Tech</p>
+                        <a href="#">
+                            <i class="fa fa-mobile" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-github" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin-square" style="color:white"></i>
+                        </a>
+                        <button href="mailto:dlin2048@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3" style="margin: 10px 0;">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
+                        <img src="img/shamroy.jpg" alt="Shamroy" style="width:100%; padding-bottom: 10px;">
+                        <h1>Shamroy Pellew</h1>
+                        <hr style="border-color:white">
+                        <p class="title" style="color: white">Co-Founder</p>
+                        <p>Senior at Brooklyn Tech</p>
+                        <a href="#">
+                            <i class="fa fa-mobile" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-envelope" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-github" style="color:white"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin-square" style="color:white"></i>
+                        </a>
+                        <button href="mailto:spellew1298@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Us</h2>
+                <p>Our team at Chime would love to get in contact with you.</p>
+                <p>We are open to any and all feedback!</p>
+                <a href="mailto:developer@chime.com">developer@chime.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://gmail.com" class="btn btn-default btn-lg">
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <span class="network-name">Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com" class="btn btn-default btn-lg">
+                            <i class="fa fa-github fa-fw"></i>
+                            <span class="network-name">Github</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" class="btn btn-default btn-lg">
+                            <i class="fa fa-linkedin fa-fw"></i>
+                            <span class="network-name">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Chime 2017 - 2018</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Mapbox JavaScript -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js" integrity="sha512-C7BBF9irt5R7hqbUm2uxtODlUVs+IsNu2UULGuZN7gM+k/mmeG4xvIEac01BtQa4YIkUpp23zZC4wIwuXaPMQA=="
+        crossorigin=""></script>
+
+    <!-- Leaflet Geosearch Javascript -->
+    <script src="https://unpkg.com/leaflet-geosearch@2.6.0/dist/bundle.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    <script src="js/maps.js"></script>
+
+</body>
+
+</html>
