@@ -1,315 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Chime</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <link href="css/card.css" rel="stylesheet">
-
-    <!-- Mapbox CSS -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
-
-    <!-- Leaflet CSS -->
-    <link href="css/map.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-        crossorigin="" />
-
+  <title>Chime</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css" type="text/css">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light chime-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+    <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span class="chime-nav-link">Chime</span>
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="logo.png" style="max-height: 5vh; display: inline; padding-right: 5px; padding-bottom: 5px;">Chime
-                </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#beta"><span class="chime-nav-link">BETA</span><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><span class="chime-nav-link">ABOUT</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features"><span class="chime-nav-link">FEATURES</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><span class="chime-nav-link">CONTACT</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="assets/img/iPhone Mockup.png" class="img-fluid ml-auto d-block" alt="">
+        </div>
+        <div class="col-lg-6 my-auto">
+          <h1 style="color: #333" class="">Introducing <span style="color: #FFF">Chime</span>.</h1>
+          <p>Have you ever fallen asleep on public transportation and missed your stop? Not anymore, with Chime's location-based alarms. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,
+            mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+
+          <form class="form-inline chime-news">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email Address">
+            </div>
+            <button type="submit" class="btn chime-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-center" style="margin-bottom: 2.5%;">Chime is approaching closed beta soon!</h1>
+          <p class="lead text-center" style="margin-bottom: 5%; font-size: 1.5em;">Chime isn't ready for release yet!<br>Our development team is currently working on a stable version for select testers. Want to be a part of our closed beta when it's released? Sign up <a href="https://andymina.typeform.com/to/pVGfwA">here</a>!
+            We'll keep you posted when we do release beta.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="assets/img/app store.png" class="img-fluid d-block ml-auto" style="max-width: 40%;" alt="">
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/google play.png" class="img-fluid d-block mr-auto" style="max-width: 40%;" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" style="background-color: rgba(0, 0, 0, .7); padding: 5%; border-radius: 5%;">
+          <h1 style="color: #FFF;">About <span style="color: #7F199C;">Chime</span>.</h1>
+          <p class="lead" style="margin-bottom: 5%; font-size: 1.5em; color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium eu nulla non vestibulum. Vivamus imperdiet hendrerit pretium. Vivamus magna ligula, dignissim non viverra ut, imperdiet eget sapien. Sed eu elit lectus. Mauris accumsan porttitor
+            libero a placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed elementum turpis nec sollicitudin ultricies. In quam urna, mollis quis sem eu, aliquam malesuada neque. </p>
+        </div>
+        <div class="col-lg-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-center" style="color: #222;">So, what can <span style="color: #FFF">Chime</span> <i>do</i>?</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/img/iPhone Mockup 2.png" class="img-fluid d-block mx-auto" alt="">
+        </div>
+        <div class="col-lg-8">
+          <div class="row h-50">
+            <div class="col-lg-6 text-center my-auto">
+              <i class="fas fa-map-marker-alt chime-icon"></i>
+              <p class="chime-caption">Wakes you up at your stop</p>
+              <p class="chime-desc">Chime's main function is to wake you up when you reach your stop and that's our top priority, regardless of connection.</p>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#use">Use</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <div class="col-lg-6 text-center my-auto">
+              <i class="fas fa-clock chime-icon"></i>
+              <p class="chime-caption">Customize your alarm</p>
+              <p class="chime-desc">Here at Chime, we are all about user experience. That's why you can customize how your alarm wakes you up.</p>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+          </div>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Chime</h1>
-                        <p class="intro-text">Location based alarm app.
-                            <br> Some other descriptor</p>
-                        <a href="#use" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="row h-50">
+            <div class="col-lg-6 text-center my-auto">
+              <i class="far fa-save chime-icon"></i>
+              <p class="chime-caption">Save custom locations</p>
+              <p class="chime-desc">With Chime, you're able to save locations that you visit often. You can save locations as <i>School</i> or <i>Work</i> for ease!</p>
             </div>
-        </div>
-    </header>
 
-    <!-- Use Section -->
-    <section id="use" class="container content-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8" id="map"></div>
-                <div class="col-lg-12">
-                    <h1 id="map-header"></h1>
-                    <form>
-                        <div id="destination">
-                            <div id="destination-address">
-                                <input id="destination-radius" placeholder="Enter Radius (mi) Here." class="form-control" type="search" />
-                                <input id="destination-search" placeholder="Enter Address Here." class="form-control" type="search" />
-                                <button id="destination-submit" class="btn btn-custom" type="button">Search</button>
-                            </div>
-                            <div id="destination-marker">
-                                <p>OR</p>
-                                <button class="btn btn-custom" type="button">Select Destination On Map</button>
-                            </div>
-                        </div>
-                        <div id="destination-control">
-                            <button class="btn btn-custom" type="button">Stop Alarm</button>
-                        </div>
-                    </form>
-                </div>
+            <div class="col-lg-6 text-center my-auto">
+              <i class="fas fa-bus-alt chime-icon"></i>
+              <p class="chime-caption">Works for both Trains and Buses</p>
+              <p class="chime-desc">Chime will be fully integrated with the NYC MTA so it supports both train <i>and</i> bus stops.</p>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Download Section -->
-    <section id="about" class="content-section text-center">
-        <div class="download-section" style="background-color: #a110a2">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About Chime</h2>
-                    <p>Making the next big thing is not about getting rich; it’s about creating something that will solve day
-                        to day problems of people. For NYC, our day to day problem is the MTA.</p>
-
-                    <p>Often unreliable and prone to delays, our city’s public transportation has a reputation for being the
-                        number one reason to make you late. To phase out all of the mishaps of delays and construction people
-                        from all over the 5 boroughs take naps on the bus or train, but tend to miss their stop. Chime solves
-                        this problem.</p>
-                </div>
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 my-auto mx-auto">
+          <h1 class="text-center display-4 mb-4" style="color: #FFF; font-size: 2em;">Have feedback? Have a problem? Reach out to us!</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
             </div>
-        </div>
-
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Our Team</h2>
-                </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <input type="email" class="form-control" value="Email Address">
+              </div>
             </div>
-            <div class="container">
-                <div class="col-lg-3" style="margin: 10px 0;">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
-                        <img src="img/andy.jpg" alt="Andy" style="width:100%; padding-bottom: 10px;">
-                        <h1>Andy Mina</h1>
-                        <hr style="border-color:white">
-                        <p class="title" style="color: white">Founder</p>
-                        <p>Senior at Brooklyn Tech</p>
-                        <a href="#">
-                            <i class="fa fa-mobile" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-envelope" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-github" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-linkedin-square" style="color:white"></i>
-                        </a>
-                        <button href="mailto:amina4835@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-3" style="margin: 10px 0;">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
-                        <img src="img/hashir.jpg" alt="Hashir" style="width:100%; padding-bottom: 10px;">
-                        <h1>Hashir Khan</h1>
-                        <hr style="border-color:white">
-                        <p class="title" style="color: white">Co-Founder</p>
-                        <p>Senior at Brooklyn Tech</p>
-                        <a href="#">
-                            <i class="fa fa-mobile" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-envelope" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-github" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-linkedin-square" style="color:white"></i>
-                        </a>
-                        <button href="mailto:hkhan6265@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-3" style="margin: 10px 0;">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
-                        <img src="img/davin.jpg" alt="Davin" style="width:100%; padding-bottom: 10px;">
-                        <h1>Davin
-                            <br> Lin</h1>
-                        <hr style="border-color:white">
-                        <p class="title" style="color: white">Co-Founder</p>
-                        <p>Senior at Brooklyn Tech</p>
-                        <a href="#">
-                            <i class="fa fa-mobile" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-envelope" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-github" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-linkedin-square" style="color:white"></i>
-                        </a>
-                        <button href="mailto:dlin2048@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
-                    </div>
-                </div>
-
-                <div class="col-lg-3" style="margin: 10px 0;">
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-                    <div class="card" style="background-color: #a110a2;color: white;padding: 20px;">
-                        <img src="img/shamroy.jpg" alt="Shamroy" style="width:100%; padding-bottom: 10px;">
-                        <h1>Shamroy Pellew</h1>
-                        <hr style="border-color:white">
-                        <p class="title" style="color: white">Co-Founder</p>
-                        <p>Senior at Brooklyn Tech</p>
-                        <a href="#">
-                            <i class="fa fa-mobile" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-envelope" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-github" style="color:white"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-linkedin-square" style="color:white"></i>
-                        </a>
-                        <button href="mailto:spellew1298@bths.edu" style="background-color: white; color: #a110a2">Contact</button>
-                    </div>
-                </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <textarea class="form-control" rows="3" placeholder="What do you want to say to us?"></textarea>
+              </div>
             </div>
+            <center><button type="submit" class="btn px-5 py-2 chime-btn-2">Send!</button></center>
+          </form>
         </div>
+
+        <div class="col-lg-6 my-auto mx-auto">
+          <img src="assets/img/logo.png" class="d-block mx-auto" id="bottom-img" alt="">
+          <p class="text-center my-3" style="color: white; font-size: 1.4em;">&copy; Chime 2018. All Rights Reserved.</p>
+          <ul class="list-inline text-center my-3">
+            <li class="list-inline-item">
+              <a href="https://www.freeprivacypolicy.com/privacy/view/03aa31cea97095f2bd4f5d808cd10383" style="color: white; font-size: 1.2em;">Privacy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="terms.html" style="color: white; font-size: 1.2em;">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" style="color: white; font-size: 1.2em;">FAQ</a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Us</h2>
-                <p>Our team at Chime would love to get in contact with you.</p>
-                <p>We are open to any and all feedback!</p>
-                <a href="mailto:developer@chime.com">developer@chime.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://gmail.com" class="btn btn-default btn-lg">
-                            <i class="fa fa-envelope fa-fw"></i>
-                            <span class="network-name">Email</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com" class="btn btn-default btn-lg">
-                            <i class="fa fa-github fa-fw"></i>
-                            <span class="network-name">Github</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com" class="btn btn-default btn-lg">
-                            <i class="fa fa-linkedin fa-fw"></i>
-                            <span class="network-name">LinkedIn</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Chime 2017 - 2018</p>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Mapbox JavaScript -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-
-    <!-- Leaflet JavaScript -->
-    <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js" integrity="sha512-C7BBF9irt5R7hqbUm2uxtODlUVs+IsNu2UULGuZN7gM+k/mmeG4xvIEac01BtQa4YIkUpp23zZC4wIwuXaPMQA=="
-        crossorigin=""></script>
-
-    <!-- Leaflet Geosearch Javascript -->
-    <script src="https://unpkg.com/leaflet-geosearch@2.6.0/dist/bundle.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-    <script src="js/maps.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
 </body>
 
 </html>
+
+<!-- Navigation
+  Logo
+  App Name
+  List
+    Beta
+    About
+    Contact
+
+ Landing Section
+  Phone Mockup
+  Type
+  Email signup box -->
