@@ -3,12 +3,21 @@
   height: 5%;
 }
 
-.chime-nav-link {
-  color: #FFF;
+.chime-navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 300ms linear;
 }
 
-.chime-btn {
-  background-color: #333;
+.chime-nav-link {
+  color: #FFF;
+  font-family: Microsoft Yi Baiti;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+}
+
+.chime-nav-link.scrolled {
+  color: #7F199C !important;
+  transition: background-color 300ms linear;
 }
 
 .chime-btn-2 {
@@ -57,10 +66,12 @@
 
 #features {
   background-color: #7F199C;
-  padding: 2.5%;
+  padding: 7% 5%;
 }
 
 #bottom-img {
   max-width: 25%;
   height: auto;
 }
+
+@font-face { font-family: Microsoft Yi Baiti; src: url('mysi.ttf'); }
