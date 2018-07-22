@@ -1,3 +1,5 @@
+// jQuery function here is to enable smooth scrolling.
+
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".chime-navbar");
@@ -16,4 +18,4 @@ $('a[href^="#"]').on('click', function(event) {
             scrollTop: target.offset().top
         }, 1000);
     }
-})
+});
