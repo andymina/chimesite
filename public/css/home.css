@@ -13,6 +13,7 @@
   font-family: Microsoft Yi Baiti;
   font-size: 1.4em;
   letter-spacing: 2px;
+  margin: 0 5%;
 }
 
 .chime-nav-link.scrolled {
@@ -74,4 +75,4 @@
   height: auto;
 }
 
-@font-face { font-family: Microsoft Yi Baiti; src: url('mysi.ttf'); }
+@font-face { font-family: Microsoft Yi Baiti; src: url('../assets/msyi.ttf'); }
